@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Ecommerce</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style type="text/css">
+ .post-content {
+    /* background: none repeat scroll 0 0 #FFFFFF; */
+    /* opacity: 0.5; */
+    top: 35%;
+    left: 65%;
+    position: absolute;
+    color: white;
+}
+
+.button1 {
+    height: 50px;
+    width: 78%;
+    max-width: 286px;
+    font-size: 25px;
+    /* font-family: "Hack", monospace; */
+    padding: 0px;
+    line-height: 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    background: #007bff;
+    /* box-shadow: 0 4px 10px hsl(34deg 100% 56% / 60%); */
+    transition: 0.1s ease-in;
+}
+.button1:hover {
+  /*background: #d8932c;*/
+  box-shadow: 0 4px 10px hsl(34 100% 56% / 0.2);
+}
+
+.button2 {
+    height: 50px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 25px;
+    /* font-family: "Hack", monospace; */
+    padding: 20px;
+    line-height: 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    background: #007bff;
+    /* box-shadow: 0 4px 10px hsl(34deg 100% 56% / 60%); */
+    transition: 0.1s ease-in;
+}
+.button2:hover {
+  /*background: #d8932c;*/
+  box-shadow: 0 4px 10px hsl(34 100% 56% / 0.2);
+}
+form {
+  display: flex;
+}
+input {
+    min-width: 290px;
+    height: 50px;
+    width: 100%;
+    /* border-radius: 5px 0 0 5px; */
+    /* background: transparent; */
+    border: 1px solid #ffffff;
+    padding: 16px;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    /* opacity: 0.5; */
+}
+
+.input1 {
+    min-width: 343px;
+    height: 50px;
+    width: 100%;
+    /* border-radius: 5px 0 0 5px; */
+    /* background: transparent; */
+    border: 1px solid #ffffff;
+    padding: 16px;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    /* opacity: 0.5; */
+}
+
+.our-clients .containercss {
+    /* width: 143%; */
+    height: 100%;
+    display: flex;
+    z-index: 100;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 5px solid #FFC107;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: -120px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.our-clients .containercss ul {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.our-clients .containercss ul li {
+  list-style: none;
+  width: 20%;
+  height: 100px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.our-clients .containercss ul li p {
+  background: #58585a;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+  border-radius: 8px;
+}
+
+.products-box1{
+     margin: 70px 20px 70px 70px;
+    border: 3px solid #fcc81e;
+}
+#navbar1{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+</style>
+
+<body>
+    <!-- Start Main Top -->
+    <nav style="border-radius: 50px;background-color: #ffc107;
+    font-size: 20px;
+    font-family: 'Poppins';
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-left: 10px;" class="navbar  navbar-expand-lg scrolling-navbar" id="navbar1">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="fas fa-bars"></span>
+        </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a style="color:black;" class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">LOGO</a>
+          </li>
+      </ul>
+        <!-- Left -->
+        <ul style="" class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/getting-started/" target="_blank">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Contact</a>
+          </li>
+        </ul>
+        
+      <ul style="margin-right: 25px;" class="navbar-nav mr-auto">
+          <li style="" class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"><i style="color:black;" class="fa fa-search" aria-hidden="true"></i></a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"><i style="color:black;" class="fa fa-heart" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"><i style="color:black;" class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+   
+<section style="background-image: url(images/slider.png)">
+    <!-- Start Slider -->
+    <div id="slides-shop" style="position: relative;overflow: hidden;width: 100%;" class="cover-slides">
+       
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="container">
+                            <h1 style="text-align:center;color: white;" class="m-b-20"><strong>We believe in quality Service.</strong></h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aenean, sem integer cursus mi taciti venenatis ullamcorper facilisi, torquent bibendum nisl nullam mus rutrum porta. Mauris habitant phasellus faucibus ut morbi facilisi egestas vitae luctus, odio lectus convallis donec tellus urna a malesuada eleifend feugiat, conubia hendrerit aptent cubilia maecenas aliquam duis velit.</p>
+                            <div style="text-align: center;">
+                                <button style="background-color: #ffc107;color: white;" class="btn btn-default">Shop Now</button>
+                            </div>
+                            
+                              
+                            </div>
+                           <!--  <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to see any changes in performance over time.</p>
+                            <p><a class="btn hvr-hover" href="#">Shop New</a></p> -->
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+           
+        <!-- <div class="slides-navigation">
+            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div> -->
+    </div>
+    <!-- End Slider -->
+    </section>
+
+      <section style="height: 30vh;" class="our-clients">
+                                    <div class="containercss">
+                                      <ul id="client-slider">
+                                        <li><img src="images/s1.png"></li>
+                                        <li><img src="images/s2.png"></li>
+                                        <li><img src="images/s3.png"></li>
+                                        <li><img src="images/s4.png"></li>
+                                        <li><img src="images/s5.png"></li>
+                                        <li><img src="images/s6.png"></li>
+                                        <li><img src="images/s1.png"></li>
+                                        <li><img src="images/s2.png"></li>
+                                      </ul>
+                                    </div>
+                                </section>
+                                <br><br><br>
+
+                                <section>
+                                    <div class="container">
+        
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="">
+                    <span>
+                        <img style="width: 100%; border-radius: 20px;" src="images/ser1.png">
+
+
+
+                    </span>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                     <a href="">
+                    <span>
+                        <img style="width: 100%;border-radius: 20px;" src="images/ser2.png">
+                        
+
+
+                    </span>
+                </a>
+                </div>
+            </div>
+            </div>
+            
+       
+    </section>
+
+    
+	<br><br><br>
+
+    <!-- Start Products  -->
+    <div style="" class="products-box">
+        <div style="padding: 50px 50px;" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1 style="text-align: center;color: #fcc81e;">OUR PRODUCTS</h1>
+                        
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <!-- <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu">
+                        <div class="button-group filter-button-group">
+                            <button class="active" data-filter="*">All</button>
+                            <button data-filter=".top-featured">Accessories</button>
+                            <button data-filter=".best-seller">Motherboards</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="row special-list">
+                
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div style="text-align:center;" class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+<section style="background-image:url(images/sec8.png);background-repeat: no-repeat; text-align: center; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div style="margin-top:30px;" class="container">
+                    <p style="color:#fcc81e;font-size: 30px;">HURRY UP</p>
+                    <p style="color:#fcc81e;font-size: 60px;">DEAL OF THE WEEK</p>
+                    <p style="color:#fcc81e;font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipiscing elit nibh tristique convallis habitasse, massa in justo nunc varius mi euismod nisl commodo lacinia, eros magna conubia lacus eget luctus gravida nostra maecenas lobortis.</p>
+                    <div class="container">
+                        <div class="d-none d-md-none d-sm-none d-xs-none d-lg-block d-xl-block">
+                            <img style="margin-bottom: -100px;" src="images/time.png">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section style="background-color: white;border-radius: 11px;margin-right: 15px;margin-left: 15px;border: 3px solid #fcc81e;">
+        <br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            
+                            <img src="images/mango.png" class="img-fluid" alt="Image">
+                            
+                        </div>
+                        <div class="why-text">
+                            <span style="display:flex;margin-top: -25px;"><a style="margin-left: 120px;z-index: 100;" href=""><img src="images/wish.png"></a><a style="margin-left: 5px;z-index: 100;" href="#"><img src="images/cart.png"></a></span><br>
+                            <h4>Product Title</h4>
+                            <span style="display:flex;margin-bottom: 10px;"><p style="color:#fcc81e;text-align: center;margin-left: 110px;"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p></span>
+                            <h5> $15.79</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    
+    </section>
+    
+<br>
+</section>
+    
+    <!-- End Products  -->
+
+    <!-- Start Blog  -->
+    
+
+
+    <section style="background-color:whitesmoke;" class="testimonial text-center">
+        <div class="container">
+
+            <div class="title-all text-center">
+                        <h1 style="text-align: center;color: #fcc81e;">OUR CUSTOMER REVIEWS</h1>
+                        
+                    </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Blog  -->
+
+
+    <section style="background-color: whitesmoke;
+            padding: -20px 40px 55px 40px;" class="bg-img text-center">
+        <div style="border-radius: 25px;    z-index: 100;
+                width: 80%;
+               
+                margin-bottom: 55px;
+                background-color: #fcc81e;
+                " class="container">
+            <div class="row">
+                <div style="margin-top:25px;" class="col-12 col-md-2 col-lg-2 col-xl-2 ">
+                    <p>Trusted by</p>
+                </div>
+                <div style="margin-top:25px;" class="col-12 col-md-2 col-lg-2 col-xl-2 ">
+                    <h1>LOGO</h1>
+                </div>
+                <div style="margin-top:25px;" class="col-12 col-md-2 col-lg-2 col-xl-2 ">
+                    <h1>LOGO</h1>
+                </div>
+                <div style="margin-top:25px;" class="col-12 col-md-2 col-lg-2 col-xl-2 ">
+                    <h1>LOGO</h1>
+                </div>
+                <div style="margin-top:25px;" class="col-12 col-md-2 col-lg-2 col-xl-2 ">
+                    <h1>LOGO</h1>
+                </div>
+                <div style="margin-top:25px;" class="col-12 col-md-2 col-lg-2 col-xl-2 ">
+                    <h1>LOGO</h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div style="text-align:left;" class="col-lg-7">
+                    <h2 style="text-align:left">
+                        <strong>Subscribe to Our Newsletter</strong>
+                    </h2>
+                    <h3 class="font-alt">Get e-mail updates about our latest shops and special offers</h3>
+                </div>
+                <div class="col-lg-5">
+                    <form class="form-subscribe" action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-lg" placeholder="Your eamil address">
+                            <span class="input-group-btn">
+                                <button style="background-color: #fcc81e;" class="btn btn-success btn-lg"
+                                    type="submit">Subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <br><br>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 pt-4">
+                        <div class="">
+                            <h1 class="footerhead text-white">About Us</h1>
+                        </div>
+                        <div class="">
+                            <p class="pt-2 text-white">Lorem ipsum dolor sit amet consectetur adipiscing elit magna,
+                                Lorem
+                                ipsum dolor sit amet consectetur adipiscing elit magna,</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-2 col-xl-2 pt-4">
+                        <div class="">
+                            <h1 class="footerhead text-white">Customer Care</h1>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <ul class="footerlinks pt-2 pl-2">
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Innovation</a></li>
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-2 col-xl-2 pt-4">
+                        <div class="">
+                            <h1 class="footerhead text-white">Information</h1>
+                        </div>
+                        <div class="">
+                            <ul class="footerlinks pt-2 pl-2">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">DELIVERY INFORMATION</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="#">Order Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-2 col-xl-2 pt-4">
+                        <div class="">
+                            <h1 class="footerhead text-white">News</h1>
+                        </div>
+                        <div class="">
+                            <ul class="footerlinks pt-2 pl-2">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Exhibitions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-3 col-xl-3 pt-4">
+                        <div class="">
+                            <h1 class="footerhead text-white">Contact Information</h1>
+                        </div>
+                        <div class="">
+                            <ul class="footerlinks pt-2 pl-2">
+                                <li>291 SOUTH 21TH STREET</li>
+                                <li>+1235235598</li>
+                                <li>logoinfo5212@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- END OF FOOTER -->
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+   <script type="text/javascript">
+       var clientSlider = document.getElementById('client-slider');
+var clientList = clientSlider.getElementsByTagName('li');
+
+setInterval(() => {
+  clientSlider.style.transform = "translateX(-20%)";
+}, 3000);
+
+clientSlider.addEventListener('transitionend', function () {
+  clientSlider.appendChild(clientSlider.firstElementChild);
+
+  clientSlider.style.transition = "none";
+  clientSlider.style.transform = "translateX(0)";
+  setTimeout(() => {
+    clientSlider.style.transition = "0.3s";
+  });
+})
+   </script>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+    <script type="text/javascript">
+                new WOW().init();
+
+    </script>
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+
+<script>
+
+    $(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 100) {
+	    $("#navbar1").css("marginTop" , "0");
+        $("#navbar1").css("marginRight" , "0");
+        $("#navbar1").css("marginLeft" , "0");
+        $("#navbar1").css("borderRadius" , "0");
+	  }
+
+	  else{
+		  $("#navbar1").css("marginTop" , "8px");  	
+          $("#navbar1").css("marginRight" , "10px");
+          $("#navbar1").css("marginLeft" , "10px");
+          $("#navbar1").css("borderRadius" , "50px");
+	  }
+  })
+})
+
+</script>
+
+</html>
